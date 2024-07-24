@@ -1,0 +1,366 @@
+/* General */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Navbar */
+.navbar.navbar-expand-lg.navbar-dark.bg-electric-blue {
+  background-color: #0033cc !important; /* Azul eléctrico para navbar */
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+  color: #ffffff !important; /* Texto blanco muy llamativo */
+}
+
+.navbar-toggler-icon {
+  background-color: #1948c9; /* Icono del toggler en blanco */
+}
+
+/* Hover efecto para enlaces del navbar */
+.navbar-nav .nav-link:hover {
+  color: #9cc0e6 !important; /* Azul más oscuro al pasar el ratón */
+}
+
+/* Encabezados */
+h2, h3 {
+  color: #0033cc; /* Azul eléctrico para encabezados */
+}
+
+
+/* Sección de perfil */
+#inicio {
+  position: relative;
+  overflow: hidden; /* Asegura que el video no desborde el contenedor */
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1; /* Envía el video al fondo */
+}
+
+.video-background video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta el video para cubrir el contenedor */
+  transform: translate(-50%, -50%);
+}
+
+#inicio .container {
+  position: relative;
+  z-index: 1;
+}
+
+#inicio h2, #inicio p.lead {
+  color: #fff; /* Color del texto para contrastar con el video de fondo */
+}
+
+/* Alineación del contenedor del texto */
+.text-container {
+  margin-right: 20px; /* Ajusta este valor según sea necesario para mantener el margen constante */
+}
+
+
+/* Opcional: Ajusta el margen derecho si es necesario para ajustar el espacio */
+.text-container {
+  margin-right: 20px; /* Ajusta este valor según sea necesario */
+}
+**
+
+
+
+/* Opcional: Para asegurar que el contenido se vea sobre la imagen */
+#inicio .container {
+  position: relative;
+  z-index: 1;
+}
+
+
+
+
+/* Sección Habilidades */
+#habilidades {
+  background-color: #f8f9fa; /* Fondo ligero para habilidades */
+}
+
+#habilidades h2 {
+  font-size: 2rem;
+  color: #0033cc;
+}
+
+#habilidades .list-unstyled li {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Tarjetas de proyectos */
+.card {
+  border: none;
+  border-radius: 0;
+}
+
+.card-img-top {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 0; /* Sin borde redondeado */
+}
+
+.card-body {
+  background-color: #ffffff;
+}
+
+.project-item {
+  margin-bottom: 1.5rem;
+}
+
+/* Botón volver arriba */
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  background-color: #0033cc;
+  color: #ffffff;
+  font-size: 24px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+}
+
+#btn-back-to-top i {
+  vertical-align: middle;
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #0033cc;
+}
+
+/* Página de Proyectos */
+#proyectos {
+  background-color: #f8f9fa; /* Fondo claro para la sección de proyectos */
+}
+
+#proyectos img {
+  border-radius: 8px; /* Bordes redondeados para las imágenes de proyectos */
+}
+
+#proyectos h3 {
+  color: #0033cc;
+}
+
+#proyectos ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  color: #555;
+}
+
+#proyectos a {
+  color: #0033cc;
+  text-decoration: none;
+}
+
+#proyectos a:hover {
+  text-decoration: underline;
+}
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#inicio .content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.profile-image {
+  max-width: 150px;
+  border-radius: 10%;
+}
+
+.bg-electric-blue {
+  background-color: #007bff;
+}
+
+.btn-white-text {
+  color: white !important;
+}
+
+.btn-secondary {
+  background-color: #f5f5f5; /* Cambia el color según tu preferencia */
+  color: #000; /* Cambia el color del texto según tu preferencia */
+  border: 1px solid #ddd; /* Opcional: Cambia el borde del botón */
+}
+
+.btn-secondary:hover {
+  background-color: #e0e0e0; /* Cambia el color de fondo al pasar el mouse */
+  color: #333; /* Cambia el color del texto al pasar el mouse */
+}
+
+.color-square-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+/* Estilos para los cuadros de colores en la sección de contacto */
+.color-squares {
+  margin-top: 20px;
+}
+
+.color-square {
+  width: 100%;
+  height: 60px; /* Ajustar tamaño según sea necesario */
+  border-radius: 5px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.color-square:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.color-square::after {
+  content: attr(data-code);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 4px 8px;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 12px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+
+}
+
+.color-square:hover::after {
+  opacity: 1;
+}
+
+h2 {
+  margin-bottom: 30px; /* Ajusta el margen según sea necesario */
+}
+
+
+
+/* Estilo para centrar el título de contacto */
+#contacto h2 {
+  text-align: center;
+}
+
+/* Estilo base para los enlaces de habilidades */
+.skill-link {
+  text-decoration: none;
+  color: #00509e; /* Ajusta el color según tu diseño */
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Animación al pasar el cursor */
+.skill-link:hover {
+  color: #003f5c; /* Color de texto al pasar el cursor */
+  transform: scale(1.1); /* Agranda el texto */
+  font-weight: bold; /* Resalta el texto */
+}
+
+/* Estilo de los enlaces dentro de la lista */
+.list-unstyled a {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+/* CSS para transformar títulos específicos a mayúsculas al pasar el cursor */
+.hover-uppercase:hover {
+  text-transform: uppercase;
+  transition: text-transform 0.3s ease;
+}
+
+.project-img {
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.project-img:hover {
+  filter: grayscale(0%);
+}
+
+.text-right {
+  text-align: right;
+}
+
+/* Alineación y margen para el contenedor de texto en pantallas grandes */
+.text-container {
+  margin-right: 20px; /* Ajusta este valor según sea necesario */
+}
+
+/* Alineación y ajuste del contenedor de texto en dispositivos móviles */
+.text-container {
+  margin-right: 20px; /* Ajusta este valor según el diseño deseado */
+}
+
+/* Clase para la separación entre columnas */
+.color-squares-column {
+  padding-right: 70px; /* Ajusta el valor según sea necesario */
+}
+
+/* Opcional: puedes ajustar el padding de la columna del formulario también */
+.col-md-6.d-flex.flex-column.justify-content-center {
+  padding-left: 30px; /* Ajusta el valor según sea necesario */
+}
+
+
+  
+
+
+
+
+
