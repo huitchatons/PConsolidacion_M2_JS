@@ -16,17 +16,7 @@ $(document).ready(function() {
         } else {
             $('#btn-back-to-top').fadeOut();
         }
-
-        // Efecto de paralaje simple
-        var parallax = document.querySelector('.parallax');
-        if (parallax) {
-            var scrolled = $(window).scrollTop();
-            parallax.style.transform = 'translateY(' + scrolled * 0.4 + 'px)';
-        }
     });
-
-    // Inicialización de un carrusel con Bootstrap
-    $('.carousel').carousel();
 
     // Filtro de proyectos
     $('.filter-btn').on('click', function() {
@@ -48,13 +38,11 @@ $(document).ready(function() {
             } else {
                 // Mostrar una alerta de éxito
                 alert('¡Gracias por tu mensaje! Pronto recibirás una respuesta.');
-                $('#contact-form')[0].reset(); // Opcional: Resetea el formulario
+                $('#contact-form')[0].reset(); 
                 event.preventDefault(); // Evita el envío del formulario
             }
         });
     });
-    
-    
 
     // Mostrar el año actual en el footer
     $('#current-year').text(new Date().getFullYear());
